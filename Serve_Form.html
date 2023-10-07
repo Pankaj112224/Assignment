@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="survey-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+            
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" id="date-of-birth" required>
+            
+            <label for="country">Country</label>
+            <select id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <!-- Add more countries here -->
+            </select>
+            
+            <label>Gender</label>
+            <div class="gender-checkbox">
+                <label><input type="checkbox" name="gender" value="Male"> Male</label>
+                <label><input type="checkbox" name="gender" value="Female"> Female</label>
+                <label><input type="checkbox" name="gender" value="Other"> Other</label>
+            </div>
+            
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            
+            <label for="mobile-number">Mobile Number</label>
+            <input type="tel" id="mobile-number" required>
+            
+            <div class="buttons">
+                <button type="button" id="submit-button">Submit</button>
+                <button type="button" id="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="popup">
+        <h2>Survey Form Submission</h2>
+        <p><strong>First Name:</strong> <span id="popup-first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="popup-last-name"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="popup-date-of-birth"></span></p>
+        <p><strong>Country:</strong> <span id="popup-country"></span></p>
+        <p><strong>Gender:</strong> <span id="popup-gender"></span></p>
+        <p><strong>Profession:</strong> <span id="popup-profession"></span></p>
+        <p><strong>Email:</strong> <span id="popup-email"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="popup-mobile-number"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
